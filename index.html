@@ -961,10 +961,12 @@
 	</script>
 </head>
 <body onLoad="init();">
-	<canvas id="canvas">
+<div id="div-canvas" style="display:inline-block; align:left">
+	<canvas id="canvas" style="display:inline-block">
 		Your browser doesn't support the HTML5 element canvas.
 	</canvas>
-</body>
+</div>
+<div id="div-controls" style="display:inline-block; vertical-align:top">
 <form>
 	<select id="firstPropList" onchange="changeProp(myProps[0],'firstPropList')">
 		<option selected>Poi</option>
@@ -1035,4 +1037,6 @@
 		<option>Stall Chaser</option>
 	</select>
 </form>
+</div>
+</body>
 </html>
